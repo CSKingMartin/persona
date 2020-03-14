@@ -30,6 +30,9 @@ module.exports = {
       ],
       include: path.resolve(__dirname, '/')
     });
+    
+    const root = path.relative('/', './');
+    config.entry.push(`/${root}/bundle.css.js`);
 
     return config;
   }
