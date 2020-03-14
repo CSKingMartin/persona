@@ -8,11 +8,11 @@ const source = (...paths) => path.resolve(pkgpath.self(), './', ...paths);
 module.exports = {
   webpack: (config, { dev }) => {
     config.resolve.alias = {
-      '@tags': source('./src/ui/tags'),
-      '@components': source('./src/ui/components'),
-      '@sbcomponents': source('./src/ui/storybook'),
-      '@layouts': source('./src/ui/layouts'),
-      '@css': source('./src/css'),
+      '@tags': source('src/ui/tags'),
+      '@components': source('src/ui/components'),
+      '@sbcomponents': source('src/ui/storybook'),
+      '@layouts': source('src/ui/layouts'),
+      '@css': source('src/css'),
       ...config.resolve.alias
     },
     config.module.rules.push({
@@ -21,15 +21,6 @@ module.exports = {
         loader: 'url-loader'
       }]
     })
-    config.module.rules.push({
-      test: /\.css$/,
-      use: [
-        {
-          loader: 'postcss-loader',
-        },
-      ],
-      include: path.resolve(__dirname, '/')
-    });
 
     return config;
   }
