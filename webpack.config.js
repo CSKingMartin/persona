@@ -14,7 +14,8 @@ module.exports = {
       '@layouts': source('src/ui/layouts'),
       '@css': source('src/css'),
       ...config.resolve.alias
-    },
+    }
+
     config.module.rules.push({
       test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf)$/,
       use: [{
@@ -22,6 +23,6 @@ module.exports = {
       }]
     })
 
-    return config;
+    return config
   }
 }
