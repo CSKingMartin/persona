@@ -12,7 +12,7 @@ export const ColorSwatch = (props) => {
   return (
     <div className="color-swatch" {...rest}>
       <div className="color-swatch__chip" style={{ 'backgroundColor': `${hex}` }}/>
-      <div className="color-swatch__caption">
+      <div className="color-swatch__caption has-rhythm">
         <p>{name}</p>
         <p>{hex}</p>
       </div>

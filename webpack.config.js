@@ -13,6 +13,8 @@ module.exports = {
       '@sbcomponents': source('src/ui/storybook'),
       '@layouts': source('src/ui/layouts'),
       '@css': source('src/css'),
+      '@js': source('src/js'),
+      '@assets': source('src/assets'),
       ...config.resolve.alias
     }
 

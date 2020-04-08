@@ -1,203 +1,165 @@
-import Head from 'next/head'
+import ContactCard from '@components/contact-card';
+import Grid from '@layouts/grid';
+import Heading from '@tags/heading';
+import Icon from '@tags/icon';
+import Link from '@tags/link';
+import List from '@tags/list';
+import MagicHeader from '@components/magic-header';
+import Pageshell from '@layouts/pageshell';
+import Paragraph from '@tags/paragraph';
+import ResumeCard from '@components/resume-card';
+import Wrapper from '@layouts/wrapper';
+
+import seran from '@assets/images/seran-screenshot.png';
+import turn from '@assets/images/turn-screenshot.png';
 
 const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+  <Pageshell>
+    <MagicHeader
+      heading="Hello,"
+      prefix="I "
+      middle=" build front-end styleguides "
+      variable={
+        [
+          "cast magic spells",
+          "brew and bubble potions",
+          "make dreams come true",
+          "grant wishes",
+          "commit sorcery"
+        ]
+      }
+      suffix="with HTML, CSS, and Javascript!"
+    >
+      <Paragraph>
+        That's not all I do! Technology can help humans tell new stories
+        in ways like never before. Accessible at the tips of our fingers
+        are beams of light that connect to ideas, music, culture, alongside
+        the direct line to hundreds of libraries worth of information.
+        Cyberspace is a vast sea. Let me help you navigate!
+      </Paragraph>
+    </MagicHeader>
 
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+    <Wrapper hasRhythm>
+      <Heading element="h3">Who am I to make such claims?</Heading>
+      <Heading element="h4">I earned a B.A., in Computer Science at Linfield College in 2017.</Heading>
+      
+      <Heading element="h4">I've been building design-systems and styleguide with React.js for almost 3 years:</Heading>
+    </Wrapper>
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
+    <Wrapper size="large" hasRhythm>
+      <Grid variant="square" col="3">
+        <ResumeCard variant="light" bkg={turn}>
+          Turn Agency
+        </ResumeCard>
+        <ResumeCard variant="light" bkg={seran}>
+          Seran Bioscience
+        </ResumeCard>
+        <ResumeCard>
+          Project Mino?
+        </ResumeCard>
+      </Grid>
+    </Wrapper>
 
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+    <Wrapper>
+      <Heading element="h4">I've had experiences with tools like:</Heading>
+    </Wrapper>
 
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
-        </a>
+    <Wrapper hasRhythm size="small">
+      <List variant="grid">
+        <List.Item>React.js implementation for static and dynamic sites</List.Item>
+        <List.Item>Working with and building custom UI library deliverables like Storybook.js</List.Item>
+        <List.Item>Node.js, Webpack, POSTCSS, and other preprocessing / package management.</List.Item>
+        <List.Item>Building code in a team environment with Git, peer-review, and collaboration</List.Item>
+        <List.Item>Integrating Front-End with popular CMS solutions like Sitecore, Adobe AEM, Umbraco, and Statamic.</List.Item>
+      </List>
+    </Wrapper>
+    <Wrapper>
+      <Heading element="h4">I've worked around the area as a...</Heading>
+    </Wrapper>
+    <Wrapper hasRhythm size="small">
+      <div>
+        <Heading weight="bold" element="h5">Front End Developer Intern</Heading>
+        <Heading element="h6">for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland OR</Heading>
+        <Heading element="h6">May 2016 - August 2016</Heading>
       </div>
-    </main>
+      <List variant="grid">
+        <List.Item>
+          Gained experience with Webpack, Node.js, and Gulp-based preprocessing
+        </List.Item>
+        <List.Item>
+          Contributed HTML and CSS to production projects
+        </List.Item>
+      </List>
 
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
+      <div>
+        <Heading weight="bold" element="h5">Software Engineer</Heading>
+        <Heading element="h6">also for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland OR</Heading>
+        <Heading element="h6">June 2017 - January 2019</Heading>
+      </div>
+      <List variant="grid">
+        <List.Item>
+          Contributing member on large-scale custom CMS projects integrating a React.js Front-End into a selection of enterprise CMS frameworks
+        </List.Item>
+        <List.Item>
+          Helped define and reach broad practrice goals, maintained internal development stacks, and worked with other team members to lessen tech-debt
+        </List.Item>
+      </List>
 
-    <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+      <div>
+        <Heading weight="bold" element="h5">Senior Software Engineer</Heading>
+        <Heading element="h6">promoted at <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland OR</Heading>
+        <Heading element="h6">January 2019 - September 2019</Heading>
+      </div>
+      <List variant="grid">
+        <List.Item>
+          Prototyped, consulted, and led development on enterprise CMS projects
+        </List.Item>
+        <List.Item>
+          Selected and trained candidates for internal internship program, and new hires
+        </List.Item>
+        <List.Item>
+          Spearheaded research and integration of new technologies into internal Front End practice
+        </List.Item>
+        <List.Item>
+          Collaborated often with UI / UX team members on animations, user-experience solutions, and prototyping
+        </List.Item>
+      </List>
 
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+      <div>
+        <Heading weight="bold" element="h5">Contracting Software Engineer</Heading>
+        <Heading element="h6">for <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend OR</Heading>
+        <Heading element="h6">September 2019 - January 2020</Heading>
+      </div>
+      <List variant="grid">
+        <List.Item>
+          Independently built small-scale Storybook catalogs for projects using Umbraco, Statamic, and Wordpress Gutenburg CMSs
+        </List.Item>
+        <List.Item>
+          Consulted on technology solutions on advancing and current projects
+        </List.Item>
+      </List> 
 
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
-  </div>
+      <div>
+        <Heading weight="bold" element="h5">Developer II</Heading>
+        <Heading element="h6">hired full time by <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend OR</Heading>
+        <Heading element="h6">January 2020 - April 2020</Heading>
+      </div>
+      <List variant="grid">
+        <List.Item>
+          Refactored old Front-End systems into new better-practice ES6 component libraries
+        </List.Item>
+        <List.Item>
+          Raised internal code standards through documentation, implementing a linting solution, and creating Component templates.
+        </List.Item>
+        <List.Item>
+          Researched incoming work, emerging technologies, and creative solutions on a per-client basis to best fit their needs
+        </List.Item>
+      </List>
+    </Wrapper>
+    <ContactCard heading="Manning a ship? Searching for a navigator?" cta="Contact me!">
+      <Paragraph>I am seeking out opportunities to help channel your web vision.</Paragraph>
+    </ContactCard>
+  </Pageshell>
 )
 
 export default Home

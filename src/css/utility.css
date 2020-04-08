@@ -1,0 +1,17 @@
+.has-rhythm {
+  & > * + * {
+    margin-top: 1rem;
+  }
+
+  &--large > * + * {
+    margin-top: 2rem;
+  }
+
+  &--page > * + * {
+    margin-top: 4rem;
+  }
+}
+
+.is-centered {
+  text-align: center;
+}

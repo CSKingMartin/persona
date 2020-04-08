@@ -3,15 +3,19 @@ import React from 'react';
 export const Grid = (props) => {
   const {
     col,
+    variant,
     className,
     children,
     ...rest
   } = props;
 
-  const classVariants = className ? `grid--${col}-col ${className}` : `grid--${col}-col`;
+  const classes = ['grid'];
+  classes.push(`grid--${col}-col`);
+
+  variant && classes.push(`grid--${variant}`);
 
   return (
-    <div className={`grid ${classVariants}`} {...rest}>
+    <div className={classes.join(' ')} {...rest}>
       {children}
     </div>
   );

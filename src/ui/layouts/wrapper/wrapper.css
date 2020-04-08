@@ -1,0 +1,23 @@
+.wrapper {
+  & > &__inner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &--small {
+    & > .wrapper__inner {
+      max-width: 700px;
+    }
+  }
+
+  &--medium {
+    & > .wrapper__inner {
+      max-width: 900px;
+    }
+  }
+
+  &--large {
+    & > .wrapper__inner {
+      max-width: 1200px;
+    }
+  }
+}
