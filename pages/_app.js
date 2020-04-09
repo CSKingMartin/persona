@@ -1,7 +1,8 @@
 //_app.js
 import React from 'react'
 import App from 'next/app'
-import '../bundle.css';
+import '@css/bundle.css';
+import '@js/bundle.js';
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for

@@ -157,7 +157,7 @@ const Home = () => (
       </List>
     </Wrapper>
     <ContactCard heading="Manning a ship? Searching for a navigator?" cta="Contact me!">
-      <Paragraph>I am seeking out opportunities to help channel your web vision.</Paragraph>
+      <Paragraph>I am seeking out opportunities to help channel your web vision!</Paragraph>
     </ContactCard>
   </Pageshell>
 )
