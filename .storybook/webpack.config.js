@@ -33,7 +33,7 @@ module.exports = async ({ config }) => {
   });
 
   const root = path.relative('/', './');
-  config.entry.push(`/${root}/bundle.js`);
+  config.entry.push(`/${root}/src/js/bundle.js`);
 
   return config;
 };

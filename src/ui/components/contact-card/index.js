@@ -2,6 +2,8 @@ import React from 'react';
 
 import Button from '@tags/button';
 import Heading from '@tags/heading';
+import Icon from '@tags/icon';
+import Wrapper from '@layouts/wrapper';
 
 export const ContactCard = (props) => {
   const {
@@ -16,13 +18,20 @@ export const ContactCard = (props) => {
   className && classes.push(className);
 
   return (
-    <div className={classes.join(' ')} {...rest}>
-      <Heading element="h3">
-        {heading}
-      </Heading>
-      {cta && <Button>{cta}</Button>}
-      {children}
-    </div>
+    <Wrapper className={classes.join(' ')} {...rest}>
+      <div className="contact-card__body has-rhythm--large">
+        <Heading element="h3">
+          {heading}
+        </Heading>
+        {cta && <Button>{cta}</Button>}
+        {children}
+      </div>
+      <div className="contact-card__icon-canvas">
+        <Icon className="contact-card__wave" name="wave" />
+        <Icon className="contact-card__ship" name="new-ship" />
+        <Icon className="contact-card__wave-reverse" name="wave" />
+      </div>
+    </Wrapper>
   );
 };
 

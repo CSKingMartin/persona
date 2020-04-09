@@ -12,11 +12,9 @@ export default {
 
 export const ToStorybook = () => (
   <Pageshell>
-    <Wrapper hasRhythm>
-      <ContactCard heading="Manning a ship? Searching for a navigator?" cta="Contact me!">
-        <Paragraph>I am seeking out opportunities to help channel your web vision.</Paragraph>
-      </ContactCard>
-    </Wrapper>
+    <ContactCard heading="Manning a ship? Searching for a navigator?" cta="Contact me!">
+      <Paragraph>I am seeking out opportunities to help channel your web vision.</Paragraph>
+    </ContactCard>
   </Pageshell>
 );
 

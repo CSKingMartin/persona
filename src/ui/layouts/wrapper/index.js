@@ -14,6 +14,7 @@ export const Wrapper = (props) => {
 
   size && classes.push(`wrapper--${size}`);
   hasRhythm && innerClasses.push('has-rhythm--large');
+  className && classes.push(className);
 
   return (
     <div className={classes.join(' ')} {...rest}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { linkTo } from '@storybook/addon-links'; // links to other stories
 
+import Icon from '@tags/icon';
 import MagicHeader from '@components/magic-header';
 import Pageshell from '@layouts/pageshell';
 import Paragraph from '@tags/paragraph';
@@ -13,6 +14,7 @@ export default {
 export const ToStorybook = () => (
   <Pageshell>
     <Wrapper hasRhythm size="small">
+      <Icon name="ship" />
       <MagicHeader
         heading="Hello,"
         prefix="I "

@@ -5,6 +5,8 @@ import Button from '@tags/button';
 import ColorSwatch from '@sbcomponents/color-swatch';
 import Grid from '@layouts/grid';
 import Heading from '@tags/heading';
+import Icon from '@tags/icon';
+import Link from '@tags/link';
 import Pageshell from '@layouts/pageshell';
 import Paragraph from '@tags/paragraph';
 import Wrapper from '@layouts/wrapper';
@@ -64,12 +66,23 @@ export const ToStorybook = () => (
         deserunt et irure aliquip ut dolore magna duis id aliquip irure in cupidatat
         ut incididunt incididunt.
       </Paragraph>
+      <Paragraph>Be careful where you <Link href="#hi-mom">click!</Link></Paragraph>
       <Grid col="3">
         {colors.map((color, index) => (
           <ColorSwatch key={index} name={color.name} hex={color.hex} />
         ))}
       </Grid>
       <Button>Click me</Button>
+
+      <Wrapper hasRhythm size="small">
+        I keep bits of my online persona around places like:
+        <Grid col="4">
+          <Icon name="github" />
+          <Icon name="linkedin-square" />
+          <Icon name="last-fm" />
+          <Icon name="instagram" />
+        </Grid>
+      </Wrapper>
     </Wrapper>
   </Pageshell>
 );
