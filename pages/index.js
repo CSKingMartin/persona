@@ -44,19 +44,19 @@ const Home = () => (
 
     <Wrapper size="small" hasRhythm>
       <Grid variant="square" col="3">
-        <ResumeCard variant="light" bkg={turn}>
+        <ResumeCard target="_blank" href="https://turnwith.us/" variant="light" bkg={turn}>
           Turn Agency
         </ResumeCard>
-        <ResumeCard variant="light" bkg={seran}>
+        <ResumeCard target="_blank" href="https://www.seranbio.com/" variant="light" bkg={seran}>
           Seran Bioscience
         </ResumeCard>
-        <ResumeCard variant="light" bkg={engagement}>
+        <ResumeCard target="_blank" href="https://connerandcarlee.wedding/" variant="light" bkg={engagement}>
           Personal engagement site
         </ResumeCard>
-        <ResumeCard bkg={fuzzy}>
+        <ResumeCard target="_blank" href="https://github.com/connectivedx/fuzzy-chainsaw" bkg={fuzzy}>
           Fuzzy Chainsaw
         </ResumeCard>
-        <ResumeCard variant="light" bkg={everence}>
+        <ResumeCard target="_blank" href="https://www.everence.com/" variant="light" bkg={everence}>
           Everence
         </ResumeCard>
       </Grid>

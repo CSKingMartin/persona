@@ -4,6 +4,7 @@ export const ResumeCard = (props) => {
   const {
     variant,
     bkg,
+    href,
     className,
     children,
     ...rest
@@ -14,9 +15,9 @@ export const ResumeCard = (props) => {
   variant && classes.push(`resume-card--${variant}`);
 
   return (
-    <div style={{ backgroundImage: `url(${bkg})` }} className={classes.join(' ')} {...rest}>
+    <a href={href} style={{ backgroundImage: `url(${bkg})` }} className={classes.join(' ')} {...rest}>
       {children}
-    </div>
+    </a>
   );
 };
 
