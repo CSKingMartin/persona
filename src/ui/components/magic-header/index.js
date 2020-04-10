@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import Heading from '@tags/heading';
+import Icon from '@tags/icon';
 import Wrapper from '@layouts/wrapper';
 
 export const MagicHeader = (props) => {
@@ -15,19 +17,21 @@ export const MagicHeader = (props) => {
     ...rest
   } = props;
 
-  const classes = ['magic-header', 'has-rhythm'];
+  const classes = ['magic-header'];
 
   className && classes.push(className);
 
   return (
-    <Wrapper className={classes.join(' ')} {...rest}>
-      <Heading>
-        {heading}
-      </Heading>
-      <Heading element="h2">
-        {prefix} {middle} {suffix}
-      </Heading>
-      {children}
+    <Wrapper hasRhythm className={classes.join(' ')} {...rest}>
+      <div className="magic-header__body has-rhythm">
+        <Heading>
+          {heading}
+        </Heading>
+        <Heading element="h2">
+          {middle}
+        </Heading>
+        {children}
+      </div>
     </Wrapper>
   );
 };

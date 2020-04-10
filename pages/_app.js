@@ -2,7 +2,7 @@
 import React from 'react'
 import App from 'next/app'
 import '@css/bundle.css';
-import '@js/bundle.js';
+// import '@js/bundle.js';
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for

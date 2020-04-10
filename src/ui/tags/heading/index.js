@@ -28,8 +28,7 @@ export const Heading = (props) => {
 };
 
 Heading.defaultProps = {
-  element: 'h1',
-  variant: 'h1'
+  element: 'h1'
 };
 
 export default Heading;

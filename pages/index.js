@@ -15,23 +15,15 @@ import turn from '@assets/images/turn-screenshot.png';
 
 const Home = () => (
   <Pageshell>
-    <MagicHeader
-      heading="Hello,"
-      prefix="I "
-      middle=" build front-end styleguides "
-      variable={
-        [
-          "cast magic spells",
-          "brew and bubble potions",
-          "make dreams come true",
-          "grant wishes",
-          "commit sorcery"
-        ]
-      }
-      suffix="with HTML, CSS, and Javascript!"
-    >
+    <MagicHeader>
+      <Heading>Hello,</Heading>
+      <Heading element="h4">My name is Conner Wells. My quest, unknown!</Heading>
+      <Heading element="h5">
+        I build front-end styleguides to transform imagination into
+        reality!
+      </Heading>
       <Paragraph>
-        That's not all I do! Technology can help humans tell new stories
+        But that's not all I do! Technology can help humans tell new stories
         in ways like never before. Accessible at the tips of our fingers
         are beams of light that connect to ideas, music, culture, alongside
         the direct line to hundreds of libraries worth of information.
