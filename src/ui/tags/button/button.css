@@ -1,0 +1,14 @@
+.button {
+  background-color: var(--color-green);
+  border: 2px groove black;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Sen', sans-serif;
+  outline: none;
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
