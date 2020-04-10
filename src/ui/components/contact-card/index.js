@@ -8,6 +8,7 @@ import Wrapper from '@layouts/wrapper';
 export const ContactCard = (props) => {
   const {
     heading,
+    href,
     cta,
     className,
     children,
@@ -23,7 +24,7 @@ export const ContactCard = (props) => {
         <Heading element="h3">
           {heading}
         </Heading>
-        {cta && <Button>{cta}</Button>}
+        {cta && <Button href={href}>{cta}</Button>}
         {children}
       </div>
       <div className="contact-card__icon-canvas">

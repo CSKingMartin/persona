@@ -1,13 +1,13 @@
 .has-rhythm {
-  & > * + * {
+  & > *:not(.global-header) + *:not(.global-footer) {
     margin-top: 1rem;
   }
 
-  &--large > * + * {
+  &--large > *:not(.global-header) + *:not(.global-footer) {
     margin-top: 2rem;
   }
 
-  &--page > * + * {
+  &--page > *:not(.global-header) + *:not(.global-footer) {
     margin-top: 4rem;
   }
 }

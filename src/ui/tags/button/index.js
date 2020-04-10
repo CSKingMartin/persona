@@ -3,6 +3,7 @@ import React from 'react';
 export const Button = (props) => {
   const {
     variant,
+    href,
     className,
     children,
     ...rest
@@ -10,10 +11,18 @@ export const Button = (props) => {
 
   const classes = ['button'];
 
+  const Element = href ? 'a' : 'button';
+
   variant && classes.push(`button--${variant}`);
 
   return (
-    <button className={classes.join(' ')} {...rest}>{children}</button>
+    <Element
+      className={classes.join(' ')}
+      href={href}
+      {...rest}
+    >
+      {children}
+    </Element>
   );
 };
 

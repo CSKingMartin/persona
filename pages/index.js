@@ -1,5 +1,6 @@
 import ContactCard from '@components/contact-card';
 import Grid from '@layouts/grid';
+import GlobalFooter from '@components/global-footer';
 import Heading from '@tags/heading';
 import Icon from '@tags/icon';
 import Link from '@tags/link';
@@ -12,6 +13,9 @@ import Wrapper from '@layouts/wrapper';
 
 import seran from '@assets/images/seran-screenshot.png';
 import turn from '@assets/images/turn-screenshot.png';
+import engagement from '@assets/images/engagement-screenshot.png';
+import fuzzy from '@assets/images/fuzzy-screenshot.png';
+import everence from '@assets/images/everence-screenshot.png';
 
 const Home = () => (
   <Pageshell>
@@ -20,10 +24,10 @@ const Home = () => (
       <Heading element="h4">My name is Conner Wells. My quest, unknown!</Heading>
       <Heading element="h5">
         I build front-end styleguides to transform imagination into
-        reality!
+        reality
       </Heading>
       <Paragraph>
-        But that's not all I do! Technology can help humans tell new stories
+        But that's not all I do. Technology can help humans tell new stories
         in ways like never before. Accessible at the tips of our fingers
         are beams of light that connect to ideas, music, culture, alongside
         the direct line to hundreds of libraries worth of information.
@@ -38,7 +42,7 @@ const Home = () => (
       <Heading element="h4">I've been building design-systems and styleguide with React.js for almost 3 years:</Heading>
     </Wrapper>
 
-    <Wrapper size="large" hasRhythm>
+    <Wrapper size="small" hasRhythm>
       <Grid variant="square" col="3">
         <ResumeCard variant="light" bkg={turn}>
           Turn Agency
@@ -46,13 +50,19 @@ const Home = () => (
         <ResumeCard variant="light" bkg={seran}>
           Seran Bioscience
         </ResumeCard>
-        <ResumeCard>
-          Project Mino?
+        <ResumeCard variant="light" bkg={engagement}>
+          Personal engagement site
+        </ResumeCard>
+        <ResumeCard bkg={fuzzy}>
+          Fuzzy Chainsaw
+        </ResumeCard>
+        <ResumeCard variant="light" bkg={everence}>
+          Everence
         </ResumeCard>
       </Grid>
     </Wrapper>
 
-    <Wrapper>
+    <Wrapper className="is-centered">
       <Heading element="h4">I've had experiences with tools like:</Heading>
     </Wrapper>
 
@@ -65,7 +75,7 @@ const Home = () => (
         <List.Item>Integrating Front-End with popular CMS solutions like Sitecore, Adobe AEM, Umbraco, and Statamic.</List.Item>
       </List>
     </Wrapper>
-    <Wrapper>
+    <Wrapper className="is-centered">
       <Heading element="h4">I've worked around the area as a...</Heading>
     </Wrapper>
     <Wrapper hasRhythm size="small">
@@ -148,9 +158,13 @@ const Home = () => (
         </List.Item>
       </List>
     </Wrapper>
-    <ContactCard heading="Manning a ship? Searching for a navigator?" cta="Contact me!">
+    <ContactCard heading="Manning a ship? Searching for a navigator?" href="mailto:conner.c.wells@gmail.com" cta="Contact me!">
       <Paragraph>I am seeking out opportunities to help channel your web vision!</Paragraph>
     </ContactCard>
+    <GlobalFooter>
+      <Paragraph>Made at home by Conner</Paragraph>
+      <Paragraph>Want to learn more? See my <Link target="_blank" href="https://github.com/CSKingMartin/persona"><Icon name="github" /></Link>code</Paragraph>
+    </GlobalFooter>
   </Pageshell>
 )
 
