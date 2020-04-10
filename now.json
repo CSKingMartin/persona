@@ -1,7 +1,0 @@
-{
-  "name": "conner-persona",
-  "builds": [
-    { "src": "styleguide/**/*", "use": "@now/static" },
-    { "src": "next.config.js", "use": "@now/next" }
-  ]
-}
