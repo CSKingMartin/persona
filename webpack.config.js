@@ -19,6 +19,13 @@ module.exports = {
     }
 
     config.module.rules.push({
+      test: /\.(svg)$/,
+      use: [{
+        loader: 'svg-inline-loader'
+      }]
+    })
+
+    config.module.rules.push({
       test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf)$/,
       use: [{
         loader: 'url-loader'
