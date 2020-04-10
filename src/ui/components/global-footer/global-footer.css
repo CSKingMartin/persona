@@ -1,0 +1,17 @@
+.global-footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+
+  & .icon {
+    fill: white;
+  }
+
+  & .paragraph {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
