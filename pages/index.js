@@ -21,7 +21,7 @@ const Home = () => (
   <Pageshell>
     <MagicHeader>
       <Heading>Hello,</Heading>
-      <Heading element="h4">My name is Conner Wells. My quest, unknown!</Heading>
+      <Heading element="h4">My name is Conner Wells. My quest, unknown.</Heading>
       <Heading element="h5">
         I build front-end styleguides to transform imagination into
         reality
@@ -37,7 +37,7 @@ const Home = () => (
 
     <Wrapper hasRhythm>
       <Heading element="h3">Who am I to make such claims?</Heading>
-      <Heading element="h4">I earned a B.A., in Computer Science at Linfield College in 2017.</Heading>
+      <Heading element="h4">I earned a B.A. in Computer Science at Linfield College in 2017</Heading>
       
       <Heading element="h4">I've been building design-systems and styleguide with React.js for almost 3 years:</Heading>
     </Wrapper>
@@ -70,18 +70,18 @@ const Home = () => (
       <List variant="grid">
         <List.Item>React.js implementation for static and dynamic sites</List.Item>
         <List.Item>Working with and building custom UI library deliverables like Storybook.js</List.Item>
-        <List.Item>Node.js, Webpack, POSTCSS, and other preprocessing / package management.</List.Item>
+        <List.Item>Node.js, Webpack, POSTCSS, and other preprocessing / package management</List.Item>
         <List.Item>Building code in a team environment with Git, peer-review, and collaboration</List.Item>
-        <List.Item>Integrating Front-End with popular CMS solutions like Sitecore, Adobe AEM, Umbraco, and Statamic.</List.Item>
+        <List.Item>Integrating Front-End with popular CMS solutions like Sitecore, Adobe AEM, Umbraco, and Statamic</List.Item>
       </List>
     </Wrapper>
     <Wrapper className="is-centered">
-      <Heading element="h4">I've worked around the area as a...</Heading>
+      <Heading element="h4">I've worked around the area as a ...</Heading>
     </Wrapper>
     <Wrapper hasRhythm size="small">
       <div>
         <Heading weight="bold" element="h5">Front End Developer Intern</Heading>
-        <Heading element="h6">for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland OR</Heading>
+        <Heading element="h6">for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
         <Heading element="h6">May 2016 - August 2016</Heading>
       </div>
       <List variant="grid">
@@ -95,7 +95,7 @@ const Home = () => (
 
       <div>
         <Heading weight="bold" element="h5">Software Engineer</Heading>
-        <Heading element="h6">also for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland OR</Heading>
+        <Heading element="h6">also for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
         <Heading element="h6">June 2017 - January 2019</Heading>
       </div>
       <List variant="grid">
@@ -103,13 +103,13 @@ const Home = () => (
           Contributing member on large-scale custom CMS projects integrating a React.js Front-End into a selection of enterprise CMS frameworks
         </List.Item>
         <List.Item>
-          Helped define and reach broad practrice goals, maintained internal development stacks, and worked with other team members to lessen tech-debt
+          Helped define and reach broad practice goals, maintained internal development stacks, and worked with other team members to lessen tech-debt
         </List.Item>
       </List>
 
       <div>
         <Heading weight="bold" element="h5">Senior Software Engineer</Heading>
-        <Heading element="h6">promoted at <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland OR</Heading>
+        <Heading element="h6">promoted at <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
         <Heading element="h6">January 2019 - September 2019</Heading>
       </div>
       <List variant="grid">
@@ -129,7 +129,7 @@ const Home = () => (
 
       <div>
         <Heading weight="bold" element="h5">Contracting Software Engineer</Heading>
-        <Heading element="h6">for <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend OR</Heading>
+        <Heading element="h6">for <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
         <Heading element="h6">September 2019 - January 2020</Heading>
       </div>
       <List variant="grid">
@@ -143,7 +143,7 @@ const Home = () => (
 
       <div>
         <Heading weight="bold" element="h5">Developer II</Heading>
-        <Heading element="h6">hired full time by <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend OR</Heading>
+        <Heading element="h6">hired full-time by <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
         <Heading element="h6">January 2020 - April 2020</Heading>
       </div>
       <List variant="grid">
@@ -151,7 +151,7 @@ const Home = () => (
           Refactored old Front-End systems into new better-practice ES6 component libraries
         </List.Item>
         <List.Item>
-          Raised internal code standards through documentation, implementing a linting solution, and creating Component templates.
+          Raised internal code standards through documentation, implementing a linting solution, and creating Component templates
         </List.Item>
         <List.Item>
           Researched incoming work, emerging technologies, and creative solutions on a per-client basis to best fit their needs
