@@ -1,5 +1,6 @@
 .pageshell {
-  background-color: var(--color-light-green);
+  background: rgb(29,86,59);
+  background: linear-gradient(90deg, rgba(29,86,59,1) 5%, rgba(40,99,87,1) 75%); 
   bottom: 0;
   left: 0;
   min-height: 100vh;

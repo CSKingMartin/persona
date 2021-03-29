@@ -7,13 +7,13 @@
   }
   &--small {
     & > .wrapper__inner {
-      max-width: 700px;
+      max-width: 800px;
     }
   }
 
   &--medium {
     & > .wrapper__inner {
-      max-width: 900px;
+      max-width: 1000px;
     }
   }
 

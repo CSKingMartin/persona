@@ -1,9 +1,12 @@
 .magic-header {
-  background-color: var(--color-green);
-  color: var(--color-white);
-  padding: 10rem 2rem 8rem;
+  color: var(--color-text);
+  padding-top: 4rem;
   position: relative;
   overflow: hidden;
+
+  @media (--medium) {
+    padding: 6rem 2rem 2rem;
+  }
 
   &__body {
     position: relative;

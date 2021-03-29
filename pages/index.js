@@ -25,7 +25,7 @@ const Home = () => (
   <Pageshell>
     <MagicHeader>
       <Heading>Hello,</Heading>
-      <Heading element="h4">My name is Conner Parsley. My quest, unknown.</Heading>
+      <Heading element="h4">My name is <span className="dont-break">Conner Parsley.</span> My quest, unknown.</Heading>
       <Heading element="h5">
         I build front-end styleguides to transform imagination into
         reality
@@ -38,8 +38,10 @@ const Home = () => (
         Cyberspace is a vast sea. Let me help you navigate!
       </Paragraph>
     </MagicHeader>
-    <Wrapper size="small" hasRhythm>
+    <Wrapper className="is-centered" style={{ color: 'white' }} hasRhythm>
       <Heading element="h3">Here's some of my work:</Heading>
+    </Wrapper>
+      <Wrapper>
       <Grid variant="square" col="3">
         <ResumeCard target="_blank" href="https://turnwith.us/" variant="light" bkg={turn}>
           Turn Agency
@@ -78,7 +80,7 @@ const Home = () => (
     </Wrapper>
 
     <Wrapper hasRhythm size="small">
-      <List variant="grid">
+      <List>
         <List.Item>React.js implementation for static and dynamic sites</List.Item>
         <List.Item>Working with and building custom UI library deliverables like Storybook.js</List.Item>
         <List.Item>Node.js, Webpack, POSTCSS, and other preprocessing / package management</List.Item>
@@ -87,86 +89,90 @@ const Home = () => (
       </List>
     </Wrapper>
     */}
-    <Wrapper hasRhythm size="small">
+    <Wrapper className="is-centered" style={{ color: 'white' }} hasRhythm>
       <Heading element="h4">I've worked around the area as a ...</Heading>
-      <div>
-        <Heading weight="bold" element="h5">Developer II</Heading>
-        <Heading element="h6">hired full-time by <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
-        <Heading element="h6">January 2020 - April 2021</Heading>
-      </div>
-      <List variant="grid">
-        <List.Item>
-          Refactored old Front-End systems into new better-practice ES6 component libraries
-        </List.Item>
-        <List.Item>
-          Raised internal code standards through documentation, implementing a linting solution, and creating Component templates
-        </List.Item>
-        <List.Item>
-          Researched incoming work, emerging technologies, and creative solutions on a per-client basis to best fit their needs
-        </List.Item>
-      </List>
+    </Wrapper>
+    <Wrapper hasRhythm size="small">
+      <div className="has-rhythm--large glassmorphism">
+        <div>
+          <Heading weight="bold" element="h5">Developer II</Heading>
+          <Heading element="h6">hired full-time by <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
+          <Heading element="h6">January 2020 - April 2021</Heading>
+        </div>
+        <List>
+          <List.Item>
+            Refactored old Front-End systems into new better-practice ES6 component libraries
+          </List.Item>
+          <List.Item>
+            Raised internal code standards through documentation, implementing a linting solution, and creating Component templates
+          </List.Item>
+          <List.Item>
+            Researched incoming work, emerging technologies, and creative solutions on a per-client basis to best fit their needs
+          </List.Item>
+        </List>
 
-      <div>
-        <Heading weight="bold" element="h5">Contracting Software Engineer</Heading>
-        <Heading element="h6">for <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
-        <Heading element="h6">September 2019 - January 2020</Heading>
-      </div>
-      <List variant="grid">
-        <List.Item>
-          Independently built small-scale Storybook catalogs for projects using Umbraco, Statamic, and Wordpress Gutenburg CMSs
-        </List.Item>
-        <List.Item>
-          Consulted on technology solutions on advancing and current projects
-        </List.Item>
-      </List>
+        <div>
+          <Heading weight="bold" element="h5">Contracting Software Engineer</Heading>
+          <Heading element="h6">for <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
+          <Heading element="h6">September 2019 - January 2020</Heading>
+        </div>
+        <List>
+          <List.Item>
+            Independently built small-scale Storybook catalogs for projects using Umbraco, Statamic, and Wordpress Gutenburg CMSs
+          </List.Item>
+          <List.Item>
+            Consulted on technology solutions on advancing and current projects
+          </List.Item>
+        </List>
 
-      <div>
-        <Heading weight="bold" element="h5">Senior Software Engineer</Heading>
-        <Heading element="h6">promoted at <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
-        <Heading element="h6">January 2019 - September 2019</Heading>
-      </div>
-      <List variant="grid">
-        <List.Item>
-          Prototyped, consulted, and led development on enterprise CMS projects
-        </List.Item>
-        <List.Item>
-          Selected and trained candidates for internal internship program, and new hires
-        </List.Item>
-        <List.Item>
-          Spearheaded research and integration of new technologies into internal Front End practice
-        </List.Item>
-        <List.Item>
-          Collaborated often with UI / UX team members on animations, user-experience solutions, and prototyping
-        </List.Item>
-      </List>
+        <div>
+          <Heading weight="bold" element="h5">Senior Software Engineer</Heading>
+          <Heading element="h6">promoted at <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
+          <Heading element="h6">January 2019 - September 2019</Heading>
+        </div>
+        <List>
+          <List.Item>
+            Prototyped, consulted, and led development on enterprise CMS projects
+          </List.Item>
+          <List.Item>
+            Selected and trained candidates for internal internship program, and new hires
+          </List.Item>
+          <List.Item>
+            Spearheaded research and integration of new technologies into internal Front End practice
+          </List.Item>
+          <List.Item>
+            Collaborated often with UI / UX team members on animations, user-experience solutions, and prototyping
+          </List.Item>
+        </List>
 
-      <div>
-        <Heading weight="bold" element="h5">Software Engineer</Heading>
-        <Heading element="h6">also for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
-        <Heading element="h6">June 2017 - January 2019</Heading>
-      </div>
-      <List variant="grid">
-        <List.Item>
-          Contributing member on large-scale custom CMS projects integrating a React.js Front-End into a selection of enterprise CMS frameworks
-        </List.Item>
-        <List.Item>
-          Helped define and reach broad practice goals, maintained internal development stacks, and worked with other team members to lessen tech-debt
-        </List.Item>
-      </List>
+        <div>
+          <Heading weight="bold" element="h5">Software Engineer</Heading>
+          <Heading element="h6">also for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
+          <Heading element="h6">June 2017 - January 2019</Heading>
+        </div>
+        <List>
+          <List.Item>
+            Contributing member on large-scale custom CMS projects integrating a React.js Front-End into a selection of enterprise CMS frameworks
+          </List.Item>
+          <List.Item>
+            Helped define and reach broad practice goals, maintained internal development stacks, and worked with other team members to lessen tech-debt
+          </List.Item>
+        </List>
 
-      <div>
-        <Heading weight="bold" element="h5">Front End Developer Intern</Heading>
-        <Heading element="h6">for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
-        <Heading element="h6">May 2016 - August 2016</Heading>
+        <div>
+          <Heading weight="bold" element="h5">Front End Developer Intern</Heading>
+          <Heading element="h6">for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
+          <Heading element="h6">May 2016 - August 2016</Heading>
+        </div>
+        <List>
+          <List.Item>
+            Gained experience with Webpack, Node.js, and Gulp-based preprocessing
+          </List.Item>
+          <List.Item>
+            Contributed HTML and CSS to production projects
+          </List.Item>
+        </List>
       </div>
-      <List variant="grid">
-        <List.Item>
-          Gained experience with Webpack, Node.js, and Gulp-based preprocessing
-        </List.Item>
-        <List.Item>
-          Contributed HTML and CSS to production projects
-        </List.Item>
-      </List>
     </Wrapper>
     <ContactCard heading="Manning a ship? Searching for a navigator?" href="mailto:conner.c.wells@gmail.com" cta="Contact me!">
       <Paragraph>I am seeking out opportunities to help channel your web vision!</Paragraph>

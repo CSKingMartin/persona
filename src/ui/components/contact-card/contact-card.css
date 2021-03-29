@@ -1,5 +1,5 @@
 .contact-card {
-  background-color: var(--color-green);
+  /*background-color: var(--color-green);*/
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -92,10 +92,12 @@
 @keyframes rock {
   from {
     transform: rotate(-5deg);
+    transform-origin: center;
   }
 
   to {
     transform: rotate(7deg);
+    transform-origin: center;
   }
 }
 

@@ -8,10 +8,27 @@
   }
 
   &--page > *:not(.global-header) + *:not(.global-footer) {
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 }
 
 .is-centered {
   text-align: center;
+}
+
+.dont-break {
+  white-space: nowrap;
+}
+
+.glassmorphism {
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 1rem;
+  padding: 2rem;
+
+  /* if backdrop support: very transparent and blurred */
+  @supports ((-webkit-backdrop-filter: blur(1em)) or (backdrop-filter: blur(1em))) {
+    background-color: rgba(255, 255, 255, .45);
+    -webkit-backdrop-filter: blur(1em);
+    backdrop-filter: blur(1em);
+  }
 }
