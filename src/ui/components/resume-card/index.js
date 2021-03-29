@@ -15,9 +15,11 @@ export const ResumeCard = (props) => {
   variant && classes.push(`resume-card--${variant}`);
 
   return (
-    <a href={href} style={{ backgroundImage: `url(${bkg})` }} className={classes.join(' ')} {...rest}>
-      {children}
-    </a>
+    <div>
+      <a href={href} style={{ backgroundImage: `url(${bkg})` }} className={classes.join(' ')} {...rest}>
+        <p style={{ textAlign: 'center', }}>{children}</p>
+      </a>
+    </div>
   );
 };
 

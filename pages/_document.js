@@ -19,7 +19,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Conner Wells - Code Wizard</title>
+          <title>Conner Parsley - Code Wizard</title>
           <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Sen:400,700&display=swap" rel="stylesheet" />
         </Head>
         <body>

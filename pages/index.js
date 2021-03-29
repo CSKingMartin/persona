@@ -13,15 +13,19 @@ import Wrapper from '@layouts/wrapper';
 
 import seran from '@assets/images/seran-screenshot.png';
 import turn from '@assets/images/turn-screenshot.png';
-import engagement from '@assets/images/engagement-screenshot.png';
-import fuzzy from '@assets/images/fuzzy-screenshot.png';
+// import engagement from '@assets/images/engagement-screenshot.png';
+// import fuzzy from '@assets/images/fuzzy-screenshot.png';
 import everence from '@assets/images/everence-screenshot.png';
+import louisa from '@assets/images/louisa-foods-screenshot.png';
+import grc from '@assets/images/grc-screenshot.png';
+import tradeshift from '@assets/images/tradeshift-screenshot.png';
+import nwn from '@assets/images/nwn-screenshot.png';
 
 const Home = () => (
   <Pageshell>
     <MagicHeader>
       <Heading>Hello,</Heading>
-      <Heading element="h4">My name is Conner Wells. My quest, unknown.</Heading>
+      <Heading element="h4">My name is Conner Parsley. My quest, unknown.</Heading>
       <Heading element="h5">
         I build front-end styleguides to transform imagination into
         reality
@@ -34,15 +38,8 @@ const Home = () => (
         Cyberspace is a vast sea. Let me help you navigate!
       </Paragraph>
     </MagicHeader>
-
-    <Wrapper hasRhythm>
-      <Heading element="h3">Who am I to make such claims?</Heading>
-      <Heading element="h4">I earned a B.A. in Computer Science at Linfield College in 2017</Heading>
-      
-      <Heading element="h4">I've been building design-systems and styleguide with React.js for almost 3 years:</Heading>
-    </Wrapper>
-
     <Wrapper size="small" hasRhythm>
+      <Heading element="h3">Here's some of my work:</Heading>
       <Grid variant="square" col="3">
         <ResumeCard target="_blank" href="https://turnwith.us/" variant="light" bkg={turn}>
           Turn Agency
@@ -50,19 +47,33 @@ const Home = () => (
         <ResumeCard target="_blank" href="https://www.seranbio.com/" variant="light" bkg={seran}>
           Seran Bioscience
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://connerandcarlee.wedding/" variant="light" bkg={engagement}>
-          Personal engagement site
-        </ResumeCard>
-        <ResumeCard target="_blank" href="https://github.com/connectivedx/fuzzy-chainsaw" bkg={fuzzy}>
-          Fuzzy Chainsaw
-        </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="light" bkg={everence}>
+        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={everence}>
           Everence
         </ResumeCard>
+        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={tradeshift}>
+          Tradeshift
+        </ResumeCard>
+        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={grc}>
+          Rock 'n Roll Camp for Girls
+        </ResumeCard>
+        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={louisa}>
+          Louisa Foods
+        </ResumeCard>
+        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={nwn}>
+          NW Natural
+        </ResumeCard>
+        {/* pending site launch / finish
+          <ResumeCard target="_blank" href="https://www.everence.com/" variant="light" bkg={everence}>
+            Spirit Mountain Community Fund
+          </ResumeCard>
+          <ResumeCard target="_blank" href="https://www.everence.com/" variant="light" bkg={everence}>
+            The Confederated Tribes of Grand Ronde
+          </ResumeCard>
+        */}
       </Grid>
     </Wrapper>
 
-    <Wrapper className="is-centered">
+    {/*<Wrapper className="is-centered">
       <Heading element="h4">I've had experiences with tools like:</Heading>
     </Wrapper>
 
@@ -75,35 +86,37 @@ const Home = () => (
         <List.Item>Integrating Front-End with popular CMS solutions like Sitecore, Adobe AEM, Umbraco, and Statamic</List.Item>
       </List>
     </Wrapper>
-    <Wrapper className="is-centered">
-      <Heading element="h4">I've worked around the area as a ...</Heading>
-    </Wrapper>
+    */}
     <Wrapper hasRhythm size="small">
+      <Heading element="h4">I've worked around the area as a ...</Heading>
       <div>
-        <Heading weight="bold" element="h5">Front End Developer Intern</Heading>
-        <Heading element="h6">for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
-        <Heading element="h6">May 2016 - August 2016</Heading>
+        <Heading weight="bold" element="h5">Developer II</Heading>
+        <Heading element="h6">hired full-time by <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
+        <Heading element="h6">January 2020 - April 2021</Heading>
       </div>
       <List variant="grid">
         <List.Item>
-          Gained experience with Webpack, Node.js, and Gulp-based preprocessing
+          Refactored old Front-End systems into new better-practice ES6 component libraries
         </List.Item>
         <List.Item>
-          Contributed HTML and CSS to production projects
+          Raised internal code standards through documentation, implementing a linting solution, and creating Component templates
+        </List.Item>
+        <List.Item>
+          Researched incoming work, emerging technologies, and creative solutions on a per-client basis to best fit their needs
         </List.Item>
       </List>
 
       <div>
-        <Heading weight="bold" element="h5">Software Engineer</Heading>
-        <Heading element="h6">also for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
-        <Heading element="h6">June 2017 - January 2019</Heading>
+        <Heading weight="bold" element="h5">Contracting Software Engineer</Heading>
+        <Heading element="h6">for <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
+        <Heading element="h6">September 2019 - January 2020</Heading>
       </div>
       <List variant="grid">
         <List.Item>
-          Contributing member on large-scale custom CMS projects integrating a React.js Front-End into a selection of enterprise CMS frameworks
+          Independently built small-scale Storybook catalogs for projects using Umbraco, Statamic, and Wordpress Gutenburg CMSs
         </List.Item>
         <List.Item>
-          Helped define and reach broad practice goals, maintained internal development stacks, and worked with other team members to lessen tech-debt
+          Consulted on technology solutions on advancing and current projects
         </List.Item>
       </List>
 
@@ -128,33 +141,30 @@ const Home = () => (
       </List>
 
       <div>
-        <Heading weight="bold" element="h5">Contracting Software Engineer</Heading>
-        <Heading element="h6">for <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
-        <Heading element="h6">September 2019 - January 2020</Heading>
+        <Heading weight="bold" element="h5">Software Engineer</Heading>
+        <Heading element="h6">also for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
+        <Heading element="h6">June 2017 - January 2019</Heading>
       </div>
       <List variant="grid">
         <List.Item>
-          Independently built small-scale Storybook catalogs for projects using Umbraco, Statamic, and Wordpress Gutenburg CMSs
+          Contributing member on large-scale custom CMS projects integrating a React.js Front-End into a selection of enterprise CMS frameworks
         </List.Item>
         <List.Item>
-          Consulted on technology solutions on advancing and current projects
+          Helped define and reach broad practice goals, maintained internal development stacks, and worked with other team members to lessen tech-debt
         </List.Item>
-      </List> 
+      </List>
 
       <div>
-        <Heading weight="bold" element="h5">Developer II</Heading>
-        <Heading element="h6">hired full-time by <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
-        <Heading element="h6">January 2020 - April 2020</Heading>
+        <Heading weight="bold" element="h5">Front End Developer Intern</Heading>
+        <Heading element="h6">for <strong>Connective DX</strong> | 2030 NW Pettygrove St., Portland, OR</Heading>
+        <Heading element="h6">May 2016 - August 2016</Heading>
       </div>
       <List variant="grid">
         <List.Item>
-          Refactored old Front-End systems into new better-practice ES6 component libraries
+          Gained experience with Webpack, Node.js, and Gulp-based preprocessing
         </List.Item>
         <List.Item>
-          Raised internal code standards through documentation, implementing a linting solution, and creating Component templates
-        </List.Item>
-        <List.Item>
-          Researched incoming work, emerging technologies, and creative solutions on a per-client basis to best fit their needs
+          Contributed HTML and CSS to production projects
         </List.Item>
       </List>
     </Wrapper>
