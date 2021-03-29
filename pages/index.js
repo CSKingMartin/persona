@@ -50,16 +50,16 @@ const Home = () => (
         <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={everence}>
           Everence
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={tradeshift}>
+        <ResumeCard target="_blank" href="https://www.tradeshift.com/" variant="dark" bkg={tradeshift}>
           Tradeshift
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={grc}>
+        <ResumeCard target="_blank" href="https://girlsrockcamp.org/" variant="dark" bkg={grc}>
           Rock 'n Roll Camp for Girls
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={louisa}>
+        <ResumeCard target="_blank" href="https://www.louisafoods.com/" variant="dark" bkg={louisa}>
           Louisa Foods
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={nwn}>
+        <ResumeCard target="_blank" href="https://www.nwnatural.com/" variant="dark" bkg={nwn}>
           NW Natural
         </ResumeCard>
         {/* pending site launch / finish
