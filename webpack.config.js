@@ -32,15 +32,15 @@ module.exports = {
       }]
     })
     
-    config.module.externals: {
+    {/* config.module.externals = {
       react: 'React'
-    },
+    }, */}
 
-    config.module.plugins: [
+    {/* config.module.plugins = [
       new webpack.ProvidePlugin({
         React: 'react',
       })
-    ]
+    ] */}
 
     return config
   }
