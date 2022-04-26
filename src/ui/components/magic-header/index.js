@@ -22,15 +22,19 @@ export const MagicHeader = (props) => {
   className && classes.push(className);
 
   return (
-    <Wrapper size="small" hasRhythm className={classes.join(' ')} {...rest}>
-      <div className="magic-header__body glassmorphism has-rhythm">
-        <Heading>
-          {heading}
-        </Heading>
-        <Heading element="h2">
-          {middle}
-        </Heading>
-        {children}
+    <Wrapper size="large" hasRhythm className={classes.join(' ')} {...rest}>
+      <div className="magic-header__body">
+        <div className="magic-header__body-left has-rhythm">
+          <Heading>
+            {heading}
+          </Heading>
+          <Heading element="h2">
+            {middle}
+          </Heading>
+        </div>
+        <div className="magic-header__body-right has-rhythm">
+          {children}
+        </div>
       </div>
     </Wrapper>
   );

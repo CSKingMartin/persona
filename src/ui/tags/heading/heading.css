@@ -5,19 +5,20 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
+  line-height: 100%;
   margin: 0;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h4 {
@@ -32,3 +33,10 @@ h6 {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+
+.heading--h1 { @extend h1 };
+.heading--h2 { @extend h2 };
+.heading--h3 { @extend h3 };
+.heading--h4 { @extend h4 };
+.heading--h5 { @extend h5 };
+.heading--h6 { @extend h6 };

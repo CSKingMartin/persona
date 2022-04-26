@@ -9,20 +9,26 @@
   }
 
   &__body {
+    display: grid;
+    grid-gap: 3rem;
     position: relative;
     z-index: 2;
-  }
-
-  &__raineer.icon {
-    height: 100%;
-    position: absolute;
-    bottom: 0rem;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-
-    @media (--medium) {
-      bottom: -6rem;
+    
+    @media(--large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    &-left {
+      flex: 1;
+    }
+    
+    &-right {
+      flex: 1;
+      margin-top: 2rem;
+      
+      @media(--large) {
+        margin-top: 15rem;
+      }
     }
   }
 

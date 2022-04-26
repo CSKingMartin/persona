@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Button from '@tags/button';
 import Heading from '@tags/heading';
 import Icon from '@tags/icon';

@@ -14,19 +14,16 @@ export default {
 
 export const ToStorybook = () => (
   <Pageshell>
-    <MagicHeader>
-      <Heading>Hello,</Heading>
-      <Heading element="h4">My name is Conner Wells. My quest, unknown!</Heading>
-      <Heading element="h5">
-        I build front-end styleguides to transform imagination into
-        reality!
+    <MagicHeader
+      heading="Hello,"
+      middle="My name is Conner Parsley."
+    >
+      <Heading variant="h3" element="h2">
+        I transform imagination into a web-reality.
       </Heading>
       <Paragraph>
-        But that's not all I do! Technology can help humans tell new stories
-        in ways like never before. Accessible at the tips of our fingers
-        are beams of light that connect to ideas, music, culture, alongside
-        the direct line to hundreds of libraries worth of information.
-        Cyberspace is a vast sea. Let me help you navigate!
+        Technology can help humans tell new stories
+        in ways like never before, but Cyberspace is a vast sea. Let me help you navigate!
       </Paragraph>
     </MagicHeader>
   </Pageshell>

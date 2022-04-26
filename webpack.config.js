@@ -31,6 +31,16 @@ module.exports = {
         loader: 'url-loader'
       }]
     })
+    
+    config.module.externals: {
+      react: 'React'
+    },
+
+    config.module.plugins: [
+      new webpack.ProvidePlugin({
+        React: 'react',
+      })
+    ]
 
     return config
   }

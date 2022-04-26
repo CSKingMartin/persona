@@ -12,8 +12,7 @@ export const Heading = (props) => {
 
   const classes = [
     'heading',
-    `heading--${element}`,
-    `heading--${variant}`
+    `heading--${variant ? variant : element}`
   ];
 
   weight && classes.push(`heading--${weight}`);
@@ -21,7 +20,7 @@ export const Heading = (props) => {
   const El = element;
 
   return (
-    <El className={classes.join(' ')} {...rest}>
+    <El className={classes.join(' ').trim()} {...rest}>
       {children}
     </El>
   );
