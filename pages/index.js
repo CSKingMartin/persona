@@ -20,6 +20,9 @@ import louisa from '@assets/images/louisa-foods-screenshot.png';
 import grc from '@assets/images/grc-screenshot.png';
 import tradeshift from '@assets/images/tradeshift-screenshot.png';
 import nwn from '@assets/images/nwn-screenshot.png';
+import saladandgo from '@assets/images/salad-and-go-screenshot.png';
+import arryved from '@assets/images/arryved-screenshot.png';
+import cruciallearning from '@assets/images/crucial-learning-screenshot.png';
 
 const Home = () => (
   <Pageshell>
@@ -62,6 +65,15 @@ const Home = () => (
         <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={nwn}>
           NW Natural
         </ResumeCard>
+        <ResumeCard target="_blank" href="https://cruciallearning.com/" variant="dark" bkg={cruciallearning}>
+          Crucial Learning
+        </ResumeCard>
+        <ResumeCard target="_blank" href="https://arryved.com/" variant="dark" bkg={arryved}>
+          Arryved
+        </ResumeCard>
+        <ResumeCard target="_blank" href="https://saladandgo.com/" variant="dark" bkg={saladandgo}>
+          Salad and Go
+        </ResumeCard>
         {/* pending site launch / finish
           <ResumeCard target="_blank" href="https://www.everence.com/" variant="light" bkg={everence}>
             Spirit Mountain Community Fund
@@ -89,6 +101,43 @@ const Home = () => (
     */}
     <Wrapper hasRhythm size="small">
       <Heading element="h4">I've worked around the area as a ...</Heading>
+      <div>
+        <Heading weight="bold" element="h5">Developer</Heading>
+        <Heading element="h6">hired by <strong>VOLTAGE LLC</strong> | 608 Main St. Louisville, CO</Heading>
+        <Heading element="h6">August 2021 - July 2021</Heading>
+      </div>
+      <List variant="grid">
+        <List.Item>
+          Led a React and Wordpress full-stack project
+        </List.Item>
+        <List.Item>
+          Learnt in-depth PHP skills to grow 'fullstack' title
+        </List.Item>
+        <List.Item>
+          Raised internal boilerplate standards; established a 'starter pack' Gutenburg theme for internal use
+        </List.Item>
+        <List.Item>
+          Maintained and contributed new features to existing Wordpress eCommerce sites
+        </List.Item>
+      </List>
+      
+      <div>
+        <Heading weight="bold" element="h5">Contracting Software Developer</Heading>
+        <Heading element="h6">contracted by <strong>VOLTAGE LLC</strong> | 608 Main St. Louisville, CO</Heading>
+        <Heading element="h6">June 2021 - August 2021</Heading>
+      </div>
+      <List variant="grid">
+        <List.Item>
+          Contributed to Wordpress Gutenburg development of Crucial Learning net-new site
+        </List.Item>
+        <List.Item>
+          Crafted PHP views, SCSS, and integrated Alpine.js Wordpress plugin
+        </List.Item>
+        <List.Item>
+          Provided additional support on internal Shopify projects
+        </List.Item>
+      </List>
+      
       <div>
         <Heading weight="bold" element="h5">Developer II</Heading>
         <Heading element="h6">hired full-time by <strong>Turn Agency</strong> | 120 SW Crowell Way, Bend, OR</Heading>
