@@ -23,7 +23,7 @@ export const List = (props) => {
     ...rest
   } = props;
 
-  const classes = ['list'];
+  const classes = ['list has-rhythm'];
   className && classes.push(className);
   classes.push(`list--${variant}`);
 

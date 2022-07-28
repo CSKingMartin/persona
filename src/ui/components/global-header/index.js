@@ -19,13 +19,13 @@ export const GlobalHeader = (props) => {
     document.querySelector('.pageshell').scrollTo(0, 0);
   }
 
-  const onHandClick = () => {
-    animate(true);
+  // const onHandClick = () => {
+  //   animate(true);
 
-    setTimeout(() => {
-      animate(false);
-    }, 2000);
-  }
+  //   setTimeout(() => {
+  //     animate(false);
+  //   }, 2000);
+  // }
 
   const [animation, animate] = useState(false);
 
@@ -35,7 +35,6 @@ export const GlobalHeader = (props) => {
   return (
     <div className={classes.join(' ')} {...rest}>
       <Wrapper className="global-header__wrapper">
-        <Icon onClick={onHandClick} className={animationClasses.join(' ')} name="hand" />
         <Icon onClick={onArrowClick} className="global-header__arrow" name="arrow" />
       </Wrapper>
     </div>
