@@ -104,7 +104,7 @@ const Home = () => (
       <div>
         <Heading weight="bold" element="h5">Developer</Heading>
         <Heading element="h6">hired by <strong>VOLTAGE LLC</strong> | 608 Main St. Louisville, CO</Heading>
-        <Heading element="h6">August 2021 - July 2021</Heading>
+        <Heading element="h6">August 2021 - July 2022</Heading>
       </div>
       <List variant="grid">
         <List.Item>
