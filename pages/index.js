@@ -24,6 +24,11 @@ import saladandgo from '@assets/images/salad-and-go-screenshot.png';
 import arryved from '@assets/images/arryved-screenshot.png';
 import cruciallearning from '@assets/images/crucial-learning-screenshot.png';
 
+import spectrum from '@assets/images/spectrum.png';
+import sera from '@assets/images/sera.png';
+import leadedge from '@assets/images/leadedge.png';
+import courtsquare from '@assets/images/courtsquare.png';
+
 const Home = () => (
   <Pageshell>
     <MagicHeader>
@@ -44,29 +49,27 @@ const Home = () => (
     <Wrapper size="small" hasRhythm>
       <Heading element="h3">Here's some of my work:</Heading>
       <Grid variant="square" col="3">
-        <ResumeCard target="_blank" href="https://turnwith.us/" variant="light" bkg={turn}>
-          Turn Agency
+        
+        {/* <ResumeCard target="_blank" href="https://www.lousiafoods.com/" variant="dark" bkg={louisa}>
+          Louisa Foods
+        </ResumeCard> */}
+        <ResumeCard target="_blank" href="https://www.spectrumequity.com/" variant="dark" bkg={spectrum}>
+          Spectrum Equity
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.seranbio.com/" variant="light" bkg={seran}>
-          Seran Bioscience
+        <ResumeCard target="_blank" href="https://www.leadedge.com/" variant="dark" bkg={courtsquare}>
+          Court Square
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={everence}>
-          Everence
+        <ResumeCard target="_blank" href="https://www.leadedge.com/" variant="dark" bkg={leadedge}>
+          Lead Edge
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={tradeshift}>
-          Tradeshift
+        <ResumeCard target="_blank" href="https://www.seradesign.com/" variant="dark" bkg={sera}>
+          SERA Architects
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={grc}>
-          Rock 'n Roll Camp for Girls
-        </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={louisa}>
+        <ResumeCard target="_blank" href="https://www.lousiafoods.com/" variant="dark" bkg={louisa}>
           Louisa Foods
         </ResumeCard>
-        <ResumeCard target="_blank" href="https://www.everence.com/" variant="dark" bkg={nwn}>
+        <ResumeCard target="_blank" href="https://www.nwnatural.com/" variant="dark" bkg={nwn}>
           NW Natural
-        </ResumeCard>
-        <ResumeCard target="_blank" href="https://cruciallearning.com/" variant="dark" bkg={cruciallearning}>
-          Crucial Learning
         </ResumeCard>
         <ResumeCard target="_blank" href="https://arryved.com/" variant="dark" bkg={arryved}>
           Arryved
@@ -74,14 +77,7 @@ const Home = () => (
         <ResumeCard target="_blank" href="https://saladandgo.com/" variant="dark" bkg={saladandgo}>
           Salad and Go
         </ResumeCard>
-        {/* pending site launch / finish
-          <ResumeCard target="_blank" href="https://www.everence.com/" variant="light" bkg={everence}>
-            Spirit Mountain Community Fund
-          </ResumeCard>
-          <ResumeCard target="_blank" href="https://www.everence.com/" variant="light" bkg={everence}>
-            The Confederated Tribes of Grand Ronde
-          </ResumeCard>
-        */}
+       
       </Grid>
     </Wrapper>
 
@@ -101,6 +97,27 @@ const Home = () => (
     */}
     <Wrapper hasRhythm size="small">
       <Heading element="h4">I've worked around the area as a ...</Heading>
+      
+      <div>
+        <Heading weight="bold" element="h5">Front-End Developer</Heading>
+        <Heading element="h6">hired by <strong>FINE Design Group</strong> | 1140 SW 11th Ave, #200 Portland, OR</Heading>
+        <Heading element="h6">January 2023 - March 2025</Heading>
+      </div>
+      <List variant="grid">
+        <List.Item>
+          Built new production sites with Vue and Nuxt.js through Netlify
+        </List.Item>
+        <List.Item>
+          Created queries to connect to in-house GraphQL endpoints
+        </List.Item>
+        <List.Item>
+          Maintained legacy sites using Pug templating, SCSS, and Vue
+        </List.Item>
+        <List.Item>
+          Helped with cross-discipline efforts to create a studio design library
+        </List.Item>
+      </List>
+      
       <div>
         <Heading weight="bold" element="h5">Developer</Heading>
         <Heading element="h6">hired by <strong>VOLTAGE LLC</strong> | 608 Main St. Louisville, CO</Heading>
